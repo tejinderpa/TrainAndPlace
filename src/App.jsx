@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import TestComponent from './components/TestComponent';
 import HomePage from './components/HomePage';
 import RegistrationPage from './components/RegistrationPage';
 import LoginPage from './components/LoginPage';
@@ -102,8 +101,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<TestComponent />} />
         {/* Public routes (no sidebar) */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegistrationPage />} />
         <Route path="/about" element={<AboutUsPage />} />

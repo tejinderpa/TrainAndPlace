@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { User, Lock, Eye, Shield, Trash2, LogOut, Key } from 'lucide-react';
-import '../App.css';
+import './App.css';
 
 const AccountSettings = () => {
   const [activeSection, setActiveSection] = useState('account');

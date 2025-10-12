@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Users, Target, Eye, Award, Users2 } from 'lucide-react';
-import '../App.css';
+import './App.css';
 
 const AboutUsPage = () => {
   const teamMembers = [

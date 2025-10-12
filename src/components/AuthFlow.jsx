@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { User, Building2, GraduationCap, Shield } from 'lucide-react';
-import '../App.css';
+import './App.css';
 
 const AuthFlow = () => {
   const [step, setStep] = useState('role-selection'); // role-selection, login, register
