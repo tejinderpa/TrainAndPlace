@@ -36,9 +36,18 @@ app.use('/api/v1/events', eventRoutes);
 app.use('/api/v1/announcements', announcementRoutes);
 app.use('/api/v1/users', userRoutes);
 
-// Health check
+// Health check routes
 app.get('/health', (req, res) => {
     res.status(200).json({ status: 'OK', message: 'Server is running' });
+});
+
+app.get('/api/v1/health', (req, res) => {
+    res.status(200).json({ 
+        success: true,
+        status: 'OK', 
+        message: 'API is running',
+        timestamp: new Date().toISOString()
+    });
 });
 
 // 404 handler
